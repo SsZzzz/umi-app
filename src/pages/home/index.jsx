@@ -1,35 +1,10 @@
 import React from 'react';
-import { DatePicker } from 'antd';
-import Ellipsis from '@/components/Ellipsis';
-import styles from './index.less';
+import { useSelector } from 'umi';
 
-function IndexPage() {
-  return (
-    <div>
-      <h1 className={styles.title}>Page index</h1>
-      <div>
-        <DatePicker />
-      </div>
-      <Ellipsis>asdfaasfasdfasfsdfas</Ellipsis>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-      <p style={{ marginBottom: 80 }}>asf</p>
-    </div>
-  );
+function Home() {
+  const { name } = useSelector((state) => state.demo);
+
+  return <div>{name}</div>;
 }
 
-export default IndexPage;
+export default Home;

@@ -3,7 +3,7 @@ import { defineConfig } from 'umi';
 export default defineConfig({
   base: '/base',
   title: 'title',
-  // favicon: '/images/favicon.png',
+  favicon: '/rocket.png',
   hash: true,
   dva: {
     hmr: true,

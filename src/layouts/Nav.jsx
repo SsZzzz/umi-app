@@ -7,16 +7,11 @@ const { SubMenu } = Menu;
 function Nav() {
   return (
     <nav className={styles.navContainer}>
-      <Menu defaultSelectedKeys={['1']} defaultOpenKeys={['sub1']} mode="inline">
-        <SubMenu key="sub2" title="Navigation Two">
-          <Menu.Item key="5">Option 5</Menu.Item>
-          <Menu.Item key="6">Option 6</Menu.Item>
-        </SubMenu>
-        <SubMenu key="sub4" title="Navigation Three">
-          <Menu.Item key="9">Option 9</Menu.Item>
-          <Menu.Item key="10">Option 10</Menu.Item>
-          <Menu.Item key="11">Option 11</Menu.Item>
-          <Menu.Item key="12">Option 12</Menu.Item>
+      <Menu defaultSelectedKeys={['home']} defaultOpenKeys={['list']} mode="inline">
+        <Menu.Item key="home">首页</Menu.Item>
+        <SubMenu key="list" title="列表">
+          <Menu.Item key="list1">列表1</Menu.Item>
+          <Menu.Item key="list2">列表2</Menu.Item>
         </SubMenu>
       </Menu>
     </nav>
