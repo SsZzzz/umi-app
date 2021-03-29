@@ -3,9 +3,9 @@ import styles from './index.less';
 
 interface selectorProps {
   children: React.ReactNode;
-  selection?: boolean;
-  onSelect?: (arr: Array<boolean>) => void;
-  scrollRef?: any;
+  selection?: boolean; // 是否可框选
+  onSelect?: (arr: Array<boolean>) => void; // 选中的回调
+  scrollRef?: any; // 父元素
   style?: React.CSSProperties;
 }
 
