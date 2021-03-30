@@ -15,11 +15,18 @@ export default defineConfig({
   fastRefresh: {},
   routes: [
     {
+      path: '/dp',
+      component: '@/pages/dp',
+    },
+    {
       path: '/',
-      component: '@/layouts',
+      component: '@/layouts/tabLayout',
       routes: [
-        { path: '/', redirect: '/home' },
-        { path: '/home', component: '@/pages/home' },
+        // { path: '/', redirect: '/home' }, // tabLayout时无效
+        { path: '/home', component: '@/pages/home', title: '首页' },
+        { path: '/list1', component: '@/pages/list1', title: '列表1' },
+        { path: '/list2', component: '@/pages/list2', title: '列表2' },
+        { path: '/404', component: '@/pages/404', title: '页面不存在' },
       ],
     },
   ],

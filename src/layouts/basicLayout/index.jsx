@@ -1,8 +1,8 @@
 import React from 'react';
+import zhCN from 'antd/lib/locale/zh_CN';
 import { ConfigProvider } from 'antd';
 import Header from './Header';
 import Nav from './Nav';
-import zhCN from 'antd/lib/locale/zh_CN';
 import styles from './index.less';
 
 export default function Layout(props) {
