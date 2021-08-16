@@ -5,6 +5,13 @@ export default defineConfig({
   title: 'title',
   favicon: '/rocket.png',
   hash: true,
+  locale: {
+    default: 'zh-CN',
+    antd: true,
+    title: true,
+    baseNavigator: true,
+    baseSeparator: '-',
+  },
   dva: {
     hmr: true,
     immer: true,
