@@ -3,7 +3,7 @@ import { defineConfig } from 'umi';
 export default defineConfig({
   base: '/base',
   title: 'title',
-  favicon: '/rocket.png',
+  // favicon: '/rocket.png',
   hash: true,
   locale: {
     default: 'zh-CN',
@@ -19,7 +19,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  mfsu: {},
+  // mfsu: {},
   fastRefresh: {},
   routes: [
     {
@@ -28,9 +28,9 @@ export default defineConfig({
     },
     {
       path: '/',
-      component: '@/layouts/tabLayout',
+      component: '@/layouts/basicLayout',
       routes: [
-        // { path: '/', redirect: '/home' }, // tabLayout时无效
+        { path: '/', redirect: '/home' }, // tabLayout时无效
         { path: '/home', component: '@/pages/home', title: '首页' },
         { path: '/list1', component: '@/pages/list1', title: '列表1' },
         { path: '/list2', component: '@/pages/list2', title: '列表2' },
