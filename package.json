@@ -22,6 +22,9 @@
     "*.ts?(x)": [
       "prettier --parser=typescript --write",
       "eslint"
+    ],
+    "*.{css,less,scss}": [
+      "stylelint \"src/**/*.(less|scss|css)\" --fix"
     ]
   },
   "dependencies": {
