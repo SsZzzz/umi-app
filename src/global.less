@@ -54,8 +54,9 @@ html {
 * {
   box-sizing: inherit;
 }
-*:before,
-*:after {
+
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -64,8 +65,8 @@ embed,
 object,
 audio,
 video {
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
 
 iframe {
@@ -73,8 +74,8 @@ iframe {
 }
 
 table {
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
 td,
@@ -91,33 +92,39 @@ body,
     'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
-/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+/* 定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸 */
 *::-webkit-scrollbar {
   width: 5px;
   height: 10px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgb(255 255 255 / 0%);
 }
-/*定义滚动条的轨道，内阴影及圆角*/
+
+/* 定义滚动条的轨道，内阴影及圆角 */
 *::-webkit-scrollbar-track {
+  background-color: rgb(230 230 230 / 5%);
   border-radius: 5px;
-  background-color: rgba(230, 230, 230, 0.05);
 }
+
 *:hover::-webkit-scrollbar-track {
-  background-color: rgba(230, 230, 230, 0.5);
+  background-color: rgb(230 230 230 / 50%);
 }
-/*定义滑块，内阴影及圆角*/
+
+/* 定义滑块，内阴影及圆角 */
 *::-webkit-scrollbar-thumb {
   height: 10px;
+  background-color: rgb(216 216 216 / 40%);
   border-radius: 10px;
-  background-color: rgba(216, 216, 216, 0.4);
   transition: background-color 1s;
 }
+
 *:hover::-webkit-scrollbar-thumb {
-  background-color: rgba(216, 216, 216, 1);
+  background-color: rgb(216 216 216 / 100%);
 }
+
 *::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(190, 190, 190, 1);
+  background-color: rgb(190 190 190 / 100%);
 }
+
 *::-webkit-scrollbar-thumb:active {
-  background-color: rgba(160, 160, 160, 1);
+  background-color: rgb(160 160 160 / 100%);
 }

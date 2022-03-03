@@ -5,6 +5,7 @@
     "build": "umi build",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "style": "stylelint \"src/**/*.(less|scss|css)\" --fix",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
   },
@@ -25,10 +26,10 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
-    "react": "17.x",
-    "react-dom": "17.x",
     "antd": "^4",
     "classnames": "^2.2.6",
+    "react": "17.x",
+    "react-dom": "17.x",
     "umi": "^3"
   },
   "devDependencies": {
@@ -45,6 +46,10 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.0",
+    "stylelint": "^14.5.3",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^25.0.0",
     "typescript": "^4.1.2",
     "yorkie": "^2.0.0"
   }
